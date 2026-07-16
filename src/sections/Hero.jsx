@@ -1,6 +1,7 @@
-import { ArrowRight, Download, DownloadCloud, DownloadIcon } from "lucide-react";
+import { ArrowRight, Icon } from "lucide-react";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -63,12 +64,28 @@ export default function Hero() {
 
             {/* CTA */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
-              <Button size='lg'>Contact Me <ArrowRight/> </Button>
-              <AnimatedBorderButton/>
+              <Button size="lg">
+                Contact Me <ArrowRight />{" "}
+              </Button>
+              <AnimatedBorderButton />
             </div>
 
             {/* Social Links */}
-            <div></div>
+
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-500">
+              <span className="text-sm text-muted-foreground">Follow me on:</span>
+              {[
+                { Icon: FaGithub, href: "https://github.com/taofeekjide" },
+                {
+                  Icon: FaLinkedin,
+                  href: "https://www.linkedin.com/in/taofeek-jide-idowu-0530692b4/",
+                },
+              ].map((social, index) => (
+                <a key={index} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+                  <social.Icon size={20} />
+                </a>
+              ))}
+            </div>
           </div>
           {/* Right Column */}
         </div>
