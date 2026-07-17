@@ -175,4 +175,10 @@
     backdrop-filter: blur(16px);
     background-color: 0 0 20px color-mix(in srgb, #27272a 20%, transparent);
   }
+
+  .timeline-glow {
+    box-shadow:
+      0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent),
+      inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
+  }
 }
