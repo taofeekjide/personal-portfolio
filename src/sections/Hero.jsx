@@ -160,7 +160,7 @@ export default function Hero() {
         </div>
 
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        <div className="mt-30 animate-fade-in animation-delay-600">
           <p className="text-lg text-muted-foreground mb-6 text-center">
             Technologies I Use
           </p>
