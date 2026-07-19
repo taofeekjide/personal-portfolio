@@ -82,9 +82,15 @@ export default function Hero() {
                   Contact Me <ArrowRight />{" "}
                 </Button>
               </a>
-              <AnimatedBorderButton>
-                My CV <DownloadCloud />
-              </AnimatedBorderButton>
+              <a
+                href="/Jide-Idowu Taofeek2.pdf"
+                target="_blank"
+                class="btn primary"
+              >
+                <AnimatedBorderButton>
+                  My CV <DownloadCloud />
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
