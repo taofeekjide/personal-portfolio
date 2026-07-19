@@ -114,7 +114,7 @@
   }
 
   .animate-carousel {
-    animation: carousel 30s linear infinite;
+    animation: carousel 5s linear infinite;
   }
 
   .animate-float {

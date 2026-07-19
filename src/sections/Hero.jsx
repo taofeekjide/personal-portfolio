@@ -1,4 +1,4 @@
-import { ArrowRight, DownloadCloud } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -50,6 +50,14 @@ export default function Hero() {
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
+              <p className="uppercase tracking-[6px] text-primary text-sm">
+                HI, I'M
+              </p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Taofeek
+                <br />
+                Jide-Idowu
+              </h1>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 Software Engineer * MERN stack
@@ -59,13 +67,12 @@ export default function Hero() {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
-                Building{" "}
-                <span className="text-primary glow-text">web applications</span>
+                Software Engineer. Creating fast,
                 <br />
-                that solve
+                <span className="text-primary glow-text">beautiful and</span>
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  real-world problems.
+                  scalable web apps.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
@@ -79,7 +86,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
               <a href="#contact">
                 <Button size="lg">
-                  Contact Me <ArrowRight />{" "}
+                  Let's Talk <ArrowDown />{" "}
                 </Button>
               </a>
               <a
@@ -88,7 +95,7 @@ export default function Hero() {
                 class="btn primary"
               >
                 <AnimatedBorderButton>
-                  My CV <DownloadCloud />
+                  View CV < ArrowUpRight />
                 </AnimatedBorderButton>
               </a>
             </div>
@@ -132,19 +139,20 @@ export default function Hero() {
                   className="w-full h-full object-cover rounded-full"
                 />
 
+                {/* Stats badge */}
+                <div className="glass rounded-xl px-5 py-4">
+                  <p className="text-primary text-lg font-bold">2+</p>
+                  <p className="text-xs text-muted-foreground">
+                    Years Building Websites
+                  </p>
+                </div>
+
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className=" flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse " />
                     <span className="text-sm font-medium">Open To Work</span>
                   </div>
-                </div>
-                {/* Stats badge */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">
-                    Detail-Oriented
-                  </div>
-                  <div className="text-xs text-muted-foreground">Developer</div>
                 </div>
               </div>
             </div>
